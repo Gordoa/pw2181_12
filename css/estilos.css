@@ -15,12 +15,32 @@ header nav ul li{
 	border: 1px solid black;
 	border-radius: 10px;
 	display: inline-block;
+	margin: 0px 20px 0px 0px;
+	padding: 10px 20px;
 	width: 90px;
+}
+footer {
+	border:2px solid orange;
+	font-weight: bold;
+	padding: 50px;
+	text-align: center;
 }
 header nav ul li:hover{
 	background: black;
 	border: 1px solid orange;
 	border-radius: 10px;
 	display: inline-block;
+	margin:0px 20px 0px 0px;
+	padding: 10px 20px;
 	width: 90px;
+}
+main{
+	margin-top: 20px;
+}
+main article{
+	border: 1px dashed black;
+	display: inline-block;
+	vertical-align: top;
+	width: 32.65%;
+
 }
