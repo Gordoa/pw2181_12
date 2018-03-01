@@ -3,11 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Praáctica 01 css</title>
+	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 	<header>
-		<img src="img/resplador.png" alt="aqui hay un resplandor">
-		<img src="img/logo.png" alt="hay un logo">
+		<img src="img/resplandor.png" alt="aqui hay un resplandor">
+		<img src="img/logo.png" id="logo" alt="hay un logo">
 		<nav>
 			<ul>
 				<li>Inicio</li>
@@ -15,44 +16,48 @@
 				<li>Sección</li>
 				<li>Sección</li>
 				<li>Sección</li>
-				<li>jejejejej</li>
+				<li>Sección</li>
 				<form action="#">
 					<input type="search" placeholder="buscar aqui...">
-					<input type="buttom" value="buscar">
+					<input type="button" value="Buscar">
 				</form>
 			</ul>
 		</nav>
 	</header>
-	<section>
+	<section id="seccion01">
 		<article>
 			<img src="img/slide2.jpg" alt="">
 		</article>
 	</section>
-	<section>
+	<section id="seccion02">
 		<article>
 			<img src="img/separador.jpg" alt="jjjj">
 			<br>
-			Otra Sección
+			<span id="unaSeccion">Otra Sección</span>
 			<br>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores illo ipsa facilis, numquam fuga consectetur eligendi ducimus distinctio consequuntur veniam, minima dolorum eveniet deserunt quibusdam saepe, non cumque sed possimus.
 			<br>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio tempore doloremque unde molestiae voluptate at esse libero magni aliquid quo eligendi ab, quisquam aperiam officia, sapiente a vel pariatur magnam.
 			<p></p>
-			<input type="sumbit" value="Ver maás">
+			<input type="submit" value="Ver más">
 		</article>
 		<article>
 			<img src="img/separador.jpg" alt="">
-				<br>
-			Otra Sección
+			<br>
+			<span id="otraSeccion">Otra Sección</span>
 			<br>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores illo ipsa facilis, numquam fuga consectetur eligendi ducimus distinctio consequuntur veniam, minima dolorum eveniet deserunt quibusdam saepe, non cumque sed possimus.
 			<br>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio tempore doloremque unde molestiae voluptate at esse libero magni aliquid quo eligendi ab, quisquam aperiam officia, sapiente a vel pariatur magnam.
 			<p></p>
-			<input type="sumbit" value="Ver maás">
+			<input type="submit" value="Ver más">
 		</article>
 		<article>
 			<img src="img/separador.jpg" alt="">
+			<br>
+			<span class="otraSeccion">Un Vídeo</span>
+			<br>
+			<img src="img/video.jpg" alt="">
 		</article>
 	</section>
 </body>
