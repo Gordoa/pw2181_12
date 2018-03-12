@@ -60,11 +60,35 @@ header nav ul li{
 	
 }
 #segundaseccion article{
-	text-align: rigth;
+	text-align: right;
 	padding-right: 122px;
+}
+#terceraseccion article{
+	display: inline-block;
+	margin-right: 3px;
+	vertical-align: top;
+	width: 23%;
+}
+#terceraseccion article img{
+	/*alinecion vertical de la imagen*/
+	/*mueve el texto que esta alrededor*/
+	vertical-align: middle;
+}
+#terceraseccion article input{
+	border-radius: 5px;
+}
+#terceraseccion article input[type="button"]{
+	background: #A4CD28;
+	color: white;
+}
+.colorazul{
+	color: #629ad4;
 }
 .colorrosa{
 	color: #FF0099;
+}
+.colorverde{
+	color: #8bc500;
 }
 .letramediana{
 	font-size: 2em;
