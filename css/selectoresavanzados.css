@@ -42,3 +42,39 @@ div>p{/*hijos directos del div*/
 div p{/*todos los elementos p seran seleccionados*/
 	color: red
 }
+/*selecciona solo el parrafo <p> que esta inmediatamanete
+despues del elemento <h2> - Hermanoadyacente*/
+h2+p{
+	color:green;
+}
+/*seleccionar todos los elementos <p>
+del elemento especificado - Hermano General
+*/
+h2 ~ p{
+	color:gray;
+}
+
+/*poner todas las secciones de un color menos referencias*/
+section:not(#referencias){
+	color:hotpink;
+}
+
+li:nth-child(odd){ /*Impares*/
+	color: green;
+}
+
+li:nth-child(even){ /*Pares*/
+	color: blue;
+}
+
+li:nth-child(5){ /*Quinto Elemento*/
+	color: red;
+}
+
+li:nth-last-child(1){ /*ultimo elemento*/
+	color:yellow;
+}
+
+p:first-line{
+	font-weight: bold;
+}
