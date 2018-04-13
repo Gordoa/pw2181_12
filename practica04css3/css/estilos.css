@@ -1,0 +1,30 @@
+body{
+	font-size: 16px;
+	margin:0 auto; 
+	max-width: 1024px;
+}
+header nav{
+	border: 2px solid blue;
+	padding-right: 40px;
+	width: 60%;
+}
+header nav ul li{
+	border: 2px solid blue;
+	display: inline-block;
+	margin-right: 15px;
+
+}
+#logo{
+	border: 1px solid blue;
+	margin-left: 40px;
+	margin-right: 750px;
+	margin-top: 15px;
+	height: 27px;
+	width: 110px;
+}
+.logitos{
+	border: 1px solid blue;
+	margin-bottom:15px;
+	width: 18px;
+	height: 18px;
+}
