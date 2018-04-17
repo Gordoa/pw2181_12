@@ -1,0 +1,61 @@
+body{
+	font-size: 16px;
+	margin:0 auto; 
+	max-width: 1024px;
+}
+#eyecandy{
+	 background: #FFAABB;
+}
+#flavors{
+	background: #00CED1;
+}
+header nav{
+	margin-left:350px; 
+	padding: 2px 0px;
+	width: 70%;
+}
+header nav ul li{
+	display: inline-block;
+	margin-right: 20px; 
+}
+#imggrande{
+	border-radius: 300px;
+}
+#lema{
+	margin-left:500px; 
+	margin-top: -80px;
+}
+.letrita{
+	font-size:0.7em; 
+}
+#logo{
+	height:130px; 
+	width:130px;
+}
+.letrablanca
+.nito{
+	font-weight: bold;
+}
+
+.rueda{ 
+  border-radius: 0.8em;
+  -moz-border-radius: 10em;
+  -webkit-border-radius: 10em;
+  display: inline-block;
+  line-height: 10em;
+  margin-right: 20px;
+  text-align: center;
+  width: 10em; 
+}
+#sec01art01{
+	display: inline-block;
+}
+#sec01art02{
+	margin-top: -500px;
+	margin-left: 500px;
+	display: inline-block;	
+}
+#services{
+
+	background: #FFD700;
+}
