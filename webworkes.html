@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Web Workes</title>
+</head>
+<body>
+	<p>Contar nümeros <div id="resultado" ></div></p>
+	<button onclick="iniciarWorked();">Iniciar</button>
+	<button onclick="pararWorker();">Detener</button>
+	
+	<p>Contar nümeros <div id="resultado2" ></div></p>
+	<button onclick="iniciarWorked2();">Iniciar</button>
+	<button onclick="pararWorker2();">Detener</button>
+	
+	<script>
+		var w1,w2;
+		function iniciarWorked(){
+			//Preguntar si soporta worked
+			if (typeof(Worker) != "undefined") {
+				if(typeof(w1)=="undefined"){
+					w1=new Worker("demoWorker.js");
+					w1.onmessage = function(event){
+						document.getElementById('resultado').innerHTML=event.data;
+					}
+				}
+				
+			}
+			else{
+				alert("el navegador no soporta 'worked'");
+			}
+		}
+
+		function pararWorker(){
+			w1.terminate();
+			w1 = undefined;
+		}
+		function pararWorker2(){
+			w2.terminate();
+			w2 = undefined;
+		}
+		function iniciarWorked2(){
+			//Preguntar si soporta worked
+			if (typeof(Worker) != "undefined") {
+				if(typeof(w2)=="undefined"){
+					w2=new Worker("demoWorker.js");
+					w2.onmessage = function(event){
+						document.getElementById('resultado2').innerHTML=event.data;
+					}
+				}
+		
+			}
+			else{
+				alert("el navegador no soporta 'worked'");
+			}
+		}
+	</script>
+</body>
+</html>
