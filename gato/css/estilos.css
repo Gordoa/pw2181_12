@@ -1,0 +1,22 @@
+body{
+	background: #CCFFFF;
+	font-size: 30px;
+	max-width: 1024px;
+	margin: 50px auto;
+}
+section button{	
+	color: #333333;
+	background: rgb(220,222,224);
+	border-radius: 5px;
+	font-size: 5em;
+	height: 200px;
+	width: 200px;
+}
+.horizontal{
+	height: 4px;
+	background: #333333;
+	width: 614px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	margin-left: 0px;
+}
