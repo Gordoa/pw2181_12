@@ -133,9 +133,37 @@ var inicioApp = function(){
 
 		}
 
+		var Listado = function(){
+			$("main > section").hide("slow");
+			$("#frmListado").show("slow");
+			var parametros = "opc=listado"+
+							"&aleatorio="+Math.random();
+			$.ajax({
+				cache:false,
+				type: "POST",
+				dataType: "json",
+				url: "php/listado.php",
+				data: parametros,
+				success: function(response){
+					if(response.respuesta == true){
+						$("#tblListado").append(response.tabla);
+					}
+					else{
+						alert("Ocurrio un Error, INTENTALO")
+					}
+				
+				},
+				error: function(xhr,ajaxOption,thrownError){
+					
+				}
+
+			});
+		}
+
 		$("#btnBorrar").on("click",Borrar);
 		$("#btnAceptar").on("click",Aceptar);
 		$("#txtNombreUsuario").on("keypress",teclaNombreUsuario);
 		$("btnGuardar").on("click",Guardar);
+		$("#btnListado").on("click",Listado);
 }
 $(document).ready(inicioApp);
